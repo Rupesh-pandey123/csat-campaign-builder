@@ -1,16 +1,45 @@
-# React + Vite
+# CSAT Campaign Builder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simplified real-time CSAT Campaign Builder built as part of a Frontend Internship Assignment.
 
-Currently, two official plugins are available:
+## 🔗 Live Demo
+https://csat-campaign-builder-nu.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠️ Tech Stack
+- React.js + Vite
+- Tailwind CSS
+-javascript
+- Context API
 
-## React Compiler
+## Deploment 
+-vercel 
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Setup Instructions
+npm install
+npm run dev
 
-## Expanding the ESLint configuration
+## 📁 Folder Structure
+src/
+  components/
+    ContentTab/    → InitialFeedback, FeedbackPage, ThankYouPage
+    StylingTab/    → StylingControls
+    Preview/       → MobilePreview
+  context/         → CampaignContext.jsx
+  App.jsx
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Features
+- Real-time mobile preview (no save/refresh needed)
+- Content tab: Initial, Feedback, Thank You screen config
+- Styling tab: colors, typography, border radius, button size
+- Dynamic options add/delete
+- Star and number rating toggle
+- Additional comment toggle
+- Media upload (PNG, JPG, GIF, Lottie)
+## 📱 Responsive Design
+
+The application is fully optimized for both desktop and mobile devices.
+
+- **Desktop:** Side-by-side layout — editor on the left, live mobile preview on the right
+- **Mobile:** Single panel view with a **"Preview →"** button to switch to the live preview and **"← Back to Editor"** button to return to the editor
+
+No content merging or overflow issues on smaller screens.
